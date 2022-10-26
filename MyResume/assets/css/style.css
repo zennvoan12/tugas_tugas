@@ -1,17 +1,6 @@
-/**
-* Template Name: MyResume - v4.9.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: #272829;
 }
 
@@ -427,6 +416,10 @@ section {
 # About
 --------------------------------------------------------------*/
 
+.about .content p {
+    font-size: 40px;
+}
+
 .about .content h3 {
     font-weight: 700;
     font-size: 26px;
@@ -521,7 +514,7 @@ section {
     text-transform: uppercase;
     display: block;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: #45505b;
 }
 
@@ -606,14 +599,14 @@ section {
 
 
 /*--------------------------------------------------------------
-# Portfolio
+# Album
 --------------------------------------------------------------*/
 
-.portfolio .portfolio-item {
+.album .album-item {
     margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.album #album-flters {
     padding: 0;
     margin: 0 auto 25px auto;
     list-style: none;
@@ -623,7 +616,7 @@ section {
     padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.album #album-flters li {
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px;
@@ -636,16 +629,16 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.album #album-flters li:hover,
+.album #album-flters li.filter-active {
     color: #0563bb;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.album #album-flters li:last-child {
     margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.album .album-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
@@ -653,7 +646,7 @@ section {
     background: rgba(69, 80, 91, 0.8);
 }
 
-.portfolio .portfolio-wrap::before {
+.album .album-wrap::before {
     content: "";
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
@@ -666,7 +659,7 @@ section {
     opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.album .album-wrap .album-info {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -682,7 +675,7 @@ section {
     align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
+.album .album-wrap .album-info::before {
     display: block;
     content: "";
     width: 48px;
@@ -696,7 +689,7 @@ section {
     z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::after {
+.album .album-wrap .album-info::after {
     display: block;
     content: "";
     width: 48px;
@@ -710,13 +703,13 @@ section {
     z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.album .album-wrap .album-info h4 {
     font-size: 20px;
     color: #45505b;
     font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.album .album-wrap .album-info p {
     color: #45505b;
     font-size: 14px;
     text-transform: uppercase;
@@ -724,12 +717,12 @@ section {
     margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.album .album-wrap .album-links {
     text-align: center;
     z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.album .album-wrap .album-links a {
     color: #45505b;
     margin: 0 2px;
     font-size: 28px;
@@ -737,11 +730,11 @@ section {
     transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.album .album-wrap .album-links a:hover {
     color: #148af9;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.album .album-wrap:hover::before {
     top: 0;
     left: 0;
     right: 0;
@@ -749,290 +742,88 @@ section {
     opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.album .album-wrap:hover .album-info {
     opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.album .album-wrap:hover .album-info::before {
     top: 15px;
     left: 15px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.album .album-wrap:hover .album-info::after {
     bottom: 15px;
     right: 15px;
 }
 
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Maps
 --------------------------------------------------------------*/
 
-.portfolio-details {
-    padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-    width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #0563bb;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #0563bb;
-}
-
-.portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-    margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-    padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-    padding: 0;
-}
-
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-
-.services .icon-box {
-    text-align: center;
-    padding: 70px 20px 80px 20px;
-    transition: all ease-in-out 0.3s;
-    background: #fff;
-    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
-}
-
-.services .icon-box .icon {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease-in-out 0.3s;
-    position: relative;
-}
-
-.services .icon-box .icon i {
-    font-size: 36px;
-    transition: 0.5s;
-    position: relative;
-}
-
-.services .icon-box .icon svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.services .icon-box .icon svg path {
-    transition: 0.5s;
-    fill: #f5f5f5;
-}
-
-.services .icon-box h4 {
-    font-weight: 600;
-    margin: 10px 0 15px 0;
-    font-size: 22px;
-}
-
-.services .icon-box h4 a {
-    color: #45505b;
-    transition: ease-in-out 0.3s;
-}
-
-.services .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-    border-color: #fff;
-    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-}
-
-.services .iconbox-blue i {
-    color: #47aeff;
-}
-
-.services .iconbox-blue:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-blue:hover .icon path {
-    fill: #47aeff;
-}
-
-.services .iconbox-orange i {
-    color: #ffa76e;
-}
-
-.services .iconbox-orange:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-orange:hover .icon path {
-    fill: #ffa76e;
-}
-
-.services .iconbox-pink i {
-    color: #e80368;
-}
-
-.services .iconbox-pink:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-pink:hover .icon path {
-    fill: #e80368;
-}
-
-.services .iconbox-yellow i {
-    color: #ffbb2c;
-}
-
-.services .iconbox-yellow:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-yellow:hover .icon path {
-    fill: #ffbb2c;
-}
-
-.services .iconbox-red i {
-    color: #ff5828;
-}
-
-.services .iconbox-red:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-red:hover .icon path {
-    fill: #ff5828;
-}
-
-.services .iconbox-teal i {
-    color: #11dbcf;
-}
-
-.services .iconbox-teal:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-teal:hover .icon path {
-    fill: #11dbcf;
-}
-
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-
-.testimonials .section-header {
+.map .section-header {
     margin-bottom: 40px;
 }
 
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
+.map .map-carousel,
+.map .map-slider {
     overflow: hidden;
 }
 
-.testimonials .testimonial-item {
+.map .testimonial-item {
     text-align: center;
 }
 
-.testimonials .testimonial-item .testimonial-img {
+.map .testimonial-item .testimonial-img {
     width: 120px;
     border-radius: 50%;
     border: 4px solid #fff;
     margin: 0 auto;
 }
 
-.testimonials .testimonial-item h3 {
+.map .testimonial-item h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 5px 0;
     color: #111;
 }
 
-.testimonials .testimonial-item h4 {
+.map .testimonial-item h4 {
     font-size: 14px;
     color: #999;
     margin: 0 0 15px 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.map .testimonial-item .quote-icon-left,
+.map .testimonial-item .quote-icon-right {
     color: #90c8fc;
     font-size: 26px;
 }
 
-.testimonials .testimonial-item .quote-icon-left {
+.map .testimonial-item .quote-icon-left {
     display: inline-block;
     left: -5px;
     position: relative;
 }
 
-.testimonials .testimonial-item .quote-icon-right {
+.map .testimonial-item .quote-icon-right {
     display: inline-block;
     right: -5px;
     position: relative;
     top: 10px;
 }
 
-.testimonials .testimonial-item p {
+.map .testimonial-item p {
     font-style: italic;
     margin: 0 auto 15px auto;
 }
 
-.testimonials .swiper-pagination {
+.map .swiper-pagination {
     margin-top: 20px;
     position: relative;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.map .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -1040,12 +831,12 @@ section {
     border: 1px solid #0563bb;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.map .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #0563bb;
 }
 
 @media (min-width: 992px) {
-    .testimonials .testimonial-item p {
+    .map .testimonial-item p {
         width: 80%;
     }
 }
@@ -1254,8 +1045,4 @@ section {
 
 #footer .copyright {
     margin: 0 0 5px 0;
-}
-
-#footer .credits {
-    font-size: 13px;
 }
